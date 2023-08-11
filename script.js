@@ -2,9 +2,9 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let canvasSize;
 if (window.innerWidth - 50 <= 712) {
-  canvasSize = window.innerWidth - 50;
+  canvasSize = Math.floor( window.innerWidth - 50);
 } else {
-  canvasSize = 712;
+  canvasSize = 700;
 }
 canvas.width = canvasSize;
 canvas.height = canvasSize;

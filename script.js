@@ -8,7 +8,7 @@ if (window.innerWidth - 50 <= 712) {
 }
 canvas.width = canvasSize;
 canvas.height = canvasSize;
-const snakeBox = 20;
+const snakeBox = 10;
 const totalMove = canvasSize / snakeBox;
 const apple = new Image();
 apple.src = "images/apple.png";
@@ -154,7 +154,7 @@ function render() {
   ctx.fillText(score, 10, 40);
 }
 render();
-var gm = setInterval(render, 100);
+var gm = setInterval(render, 400);
 
 // Game Over Function
 function gameOver() {
